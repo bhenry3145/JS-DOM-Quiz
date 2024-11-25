@@ -21,43 +21,45 @@ changeBtn.addEventListener('click', function () {
     colorChoice = enterColorChange.value
     if (colors.includes(colorChoice))
     {
-        if (boxChoice === "1")
-            {
-                box1.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "2")
-            {
-                box2.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "3")
-            {
-                box3.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "4")
-            {
-                box4.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "5")
-            {
-                box5.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "6")
-            {
-                box6.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "7")
-            {
-                box7.style.backgroundColor = colorChoice;
-            }
-        else if (boxChoice === "8")
-            {
-                box8.style.backgroundColor = colorChoice;
-            } 
+        if (boxes.includes(boxChoice))
+        {
+            if (boxChoice === "1")
+                {
+                    box1.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "2")
+                {
+                    box2.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "3")
+                {
+                    box3.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "4")
+                {
+                    box4.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "5")
+                {
+                    box5.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "6")
+                {
+                    box6.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "7")
+                {
+                    box7.style.backgroundColor = colorChoice;
+                }
+            else if (boxChoice === "8")
+                {
+                    box8.style.backgroundColor = colorChoice;
+                }
+        }
         else {
             console.log("Please choose a box from 1-8");
         }    
     }
-
     else {
         console.log("Please enter one of the colors provided");
     }
